@@ -1,6 +1,6 @@
 import web
-
-urls = ('/','hello')
+from views.hello2 import hello2
+urls = ('/',hello2)
 
 app = web.application(urls,globals())
 
